@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    
+    <color name="brown">#666699</color>
+    <color name="blue">#50b9ed</color>
+    <color name="blue_pressed">#dd50b9ed</color>
+    <color name="blue_dark">#167ed9</color>
+    <color name="gray">#a0a0a0</color>
+    <color name="pink">#ffeeee</color>
+    <color name="pink_pressed">#ffccff</color>
+    <color name="red">#f74c31</color>
+    <color name="red_error">#f76248</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#efc786</color>
+    <color name="yellow_warning">#ffbe00</color>
+    <color name="yellow_prssed">#f5e9b3</color>
+    <color name="orange">#e06c4c</color>
+    <!-- 灰色 -->
+    <color name="grey_line">#c7c7c7</color>
+    <!-- 绿色 -->
+    <color name="green">#5fb41b</color>
+    <!-- 淡灰色 -->
+    <color name="grey_light">#f4f7fa</color>
+    <!-- 很淡灰色 -->
+    <color name="grey_very_light">#33e2d6c9</color>
+    <!-- 很淡蓝色 -->
+    <color name="blue_very_light">#ddf3f6</color>
+    <!-- 淡蓝色 -->
+    <color name="blue_light">#a9dcf6</color>
+    <!-- 灰色字体 -->
+    <color name="grey_text">#999999</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    
+    <!-- 小清新颜色 -->
+    <color name="cute_blue">#65b2e3</color>
+    <color name="cute_blue_light">#addfea</color>
+    <color name="cute_green">#9cc84e</color>
+    <color name="cute_green2">#b3c60a</color>
+    <color name="cute_green_light">#e2e66e</color>
+    <color name="cute_green_milk">#f7fbc9</color>
+    <color name="cute_green_milk2">#dce19e</color>
+    <color name="cute_pink">#e6eaf3</color>
+    <color name="cute_gray">#cccccc</color>
+    <color name="cute_gray_white">#e6e6e6</color>
+    <color name="cute_yellow">#ffc425</color>
+    <color name="cute_yellow_milk">#efe2bf</color>
+    <color name="cute_yellow_light">#f9ecc2</color>
+    <color name="cute_white_milk">#fffae6</color>
+    <color name="cute_white_milk_more">#fbf3cf</color>
+    
+    <color name="cute_dream">#f3f2f7</color>
+    <color name="cute_dream2">#f8ebe5</color>
+    <color name="cute_dream3">#f9e7e5</color>
+    <color name="cute_dream4">#fff7fa</color>
+    <color name="cute_dream5">#ecd9dd</color>
+    <color name="cute_dream_green_light">#cedda4</color>
+    <color name="cute_dream_green">#bad296</color>
+    <color name="cute_dream_yellow">#f5eaaa</color>
+    <color name="cute_blue_sky1">#c4ecf6</color>
+    <color name="cute_blue_sky2">#cedef5</color>
+    <color name="cute_blue_sky3">#a7c3ce</color>
+    <color name="cute_cloud">#eef9fd</color>
+    <color name="cute_sand1">#98896c</color>
+    <color name="cute_sand2">#f3ca96</color>
+    <color name="cute_sand3">#e6d5b9</color>
+</resources>

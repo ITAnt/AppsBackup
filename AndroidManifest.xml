@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onion.appsbackup"
+    android:versionCode="3"
+    android:versionName="1.5.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 文件存储 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 欢迎界面 -->
+        <activity
+            android:name="com.onion.appsbackup.activity.SplashActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppStartLoadTranslucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 登录界面 -->
+        <activity
+            android:name="com.onion.appsbackup.activity.LoginActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+
+        <!-- 注册界面 -->
+        <activity
+            android:name="com.onion.appsbackup.activity.RegisterActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+
+        <!-- 主界面 -->
+        <activity
+            android:name="com.onion.appsbackup.activity.MainActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+
+        <!-- 设置界面 -->
+        <activity
+            android:name="com.onion.appsbackup.activity.SettingActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+
+        <!-- 关于我们的界面 -->
+        <activity
+            android:name="com.onion.appsbackup.activity.AboutActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" />
+
+        <!-- 备份界面 -->
+        <activity
+            android:name="com.onion.appsbackup.activity.BackupActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+        
+        <!-- 恢复界面 -->
+        <activity
+            android:name="com.onion.appsbackup.activity.RestoreActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+        
+        <!-- 发送界面 -->
+        <activity
+            android:name="com.onion.appsbackup.activity.SendActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+        
+        <!-- 接收界面 -->
+        <activity
+            android:name="com.onion.appsbackup.activity.ReceiveActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+
+        
+
+        <!-- 认证界面 -->
+        <activity
+            android:name="com.onion.appsbackup.activity.OAuthActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 微博相关开始 -->
+        <!--
+        <activity
+            android:name="com.sina.vdisk.activity.OAuthActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.sina.vdisk.activity.VDiskResultActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sina.vdisk.activity.VDiskTestActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <!-- 微博相关结束 -->
+
+
+        <!-- 腾讯相关 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104830371" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 友盟 -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="554b79ad67e58e76980040e2" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="weibo360" />
+    </application>
+
+</manifest>

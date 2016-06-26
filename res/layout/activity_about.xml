@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_very_light"
+    android:orientation="vertical" >
+
+    <com.onion.appsbackup.view.CustomedActionBar
+        xmlns:ab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ab_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        ab:title="@string/label_about"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo" />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_version"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_about_details"
+        android:textColor="@color/grey_text"
+        android:textSize="12sp" />
+
+</LinearLayout>
