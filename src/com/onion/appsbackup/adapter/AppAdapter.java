@@ -83,8 +83,11 @@ public class AppAdapter extends BaseAdapter {
 				}
 			}
 		});
-		
-		mHolder.iv_app_icon.setImageBitmap(app.getAppIcon());
+
+		if (app.getAppIcon() != null) {
+			mHolder.iv_app_icon.setImageBitmap(app.getAppIcon());
+		}
+
 		mHolder.tv_app_name.setText(app.getAppName());
 		mHolder.tv_app_package_name.setText(app.getAppPackageName());
 		if (app.isChecked()) {

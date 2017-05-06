@@ -6,7 +6,6 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -351,16 +350,22 @@ public class RestoreActivity extends Activity {
 
 		for (PackageInfo pi : packs) {
 			//显示用户安装的应用程序，而不显示系统程序
-			if ((pi.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) == 0 && (pi.applicationInfo.flags & ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) == 0) {
-				App app = new App();
-				// 图标
+			/*if ((pi.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) == 0 && (pi.applicationInfo.flags & ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) == 0) {
+
+			}*/
+			App app = new App();
+			// 图标
+			try {
 				app.setAppIcon(((BitmapDrawable) pi.applicationInfo.loadIcon(pm)).getBitmap());
-				// 应用程序名称
-				app.setAppName(pi.applicationInfo.loadLabel(pm).toString());
-				// 应用程序包名
-				app.setAppPackageName(pi.applicationInfo.packageName);
-				apps.add(app);
+			} catch (Exception e) {
+				e.printStackTrace();
 			}
+
+			// 应用程序名称
+			app.setAppName(pi.applicationInfo.loadLabel(pm).toString());
+			// 应用程序包名
+			app.setAppPackageName(pi.applicationInfo.packageName);
+			apps.add(app);
 		}
 		return apps;
 	}

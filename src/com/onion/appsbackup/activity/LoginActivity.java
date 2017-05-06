@@ -1,9 +1,5 @@
 package com.onion.appsbackup.activity;
 
-import java.util.List;
-
-import org.json.JSONObject;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -23,10 +19,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import cn.bmob.v3.BmobQuery;
-import cn.bmob.v3.BmobUser;
-import cn.bmob.v3.listener.FindListener;
-import cn.bmob.v3.listener.SaveListener;
 
 import com.onion.appsbackup.Constant;
 import com.onion.appsbackup.R;
@@ -41,6 +33,15 @@ import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
 import com.tencent.tauth.UiError;
 import com.umeng.analytics.MobclickAgent;
+
+import org.json.JSONObject;
+
+import java.util.List;
+
+import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.BmobUser;
+import cn.bmob.v3.listener.FindListener;
+import cn.bmob.v3.listener.SaveListener;
 
 public class LoginActivity extends Activity implements OnClickListener, TextWatcher {
 	private Button btn_login;
@@ -464,7 +465,8 @@ public class LoginActivity extends Activity implements OnClickListener, TextWatc
 				break;
 				
 			case R.id.tv_register:
-				startActivityForResult(new Intent(LoginActivity.this, RegisterActivity.class), 0);
+				Toast.makeText(this, "注册暂时不开放了，请使用QQ登录", Toast.LENGTH_SHORT).show();
+				//startActivityForResult(new Intent(LoginActivity.this, RegisterActivity.class), 0);
 				break;
 
 			default:

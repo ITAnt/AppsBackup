@@ -1,7 +1,6 @@
 package com.onion.appsbackup.activity;
 
 import android.app.Activity;
-import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.BitmapDrawable;
@@ -194,12 +193,40 @@ public class BackupActivity extends Activity implements OnClickListener {
 						e.printStackTrace();
 					}
 					List<App> backupApps = new ArrayList<App>();
-					backupApps.addAll(restoreApps);
+					if (restoreApps != null) {
+						backupApps.addAll(restoreApps);
+					}
 					backupApps.addAll(checkedApps);
+
+
+
+					List<String> serverPackageNames = new ArrayList<String>();
+					if (restoreApps != null && restoreApps.size() > 0) {
+						for (App serverApp : restoreApps) {
+							serverPackageNames.add(serverApp.getAppPackageName());
+						}
+					}
+
+					List<String> checkedPackageNames = new ArrayList<String>();
+					for (App checkedApp : checkedApps) {
+						checkedPackageNames.add(checkedApp.getAppPackageName());
+					}
 
 					// 去除重复
 					List<App> noDuplicateApps = new ArrayList<App>();
-					for (App app : backupApps) {
+					if (serverPackageNames.size() > 0) {
+						// 先保存好服务器的
+						noDuplicateApps.addAll(restoreApps);
+						for (int i = 0, j = checkedPackageNames.size(); i < j; i++) {
+							if (!serverPackageNames.contains(checkedPackageNames.get(i))) {
+								// 服务器没有选中的这个应用
+								noDuplicateApps.add(checkedApps.get(i));
+							}
+						}
+					} else {
+						noDuplicateApps.addAll(checkedApps);
+					}
+					/*for (App app : backupApps) {
 						List<String> packageNames = new ArrayList<String>();
 						for (App noDuplicateApp : noDuplicateApps) {
 							packageNames.add(noDuplicateApp.getAppPackageName());
@@ -207,7 +234,7 @@ public class BackupActivity extends Activity implements OnClickListener {
 						if (!packageNames.contains(app.getAppPackageName())) {
 							noDuplicateApps.add(app);
 						}
-					}
+					}*/
 
 					String appInfos = com.alibaba.fastjson.JSON.toJSONString(noDuplicateApps);
 					user.setApps(appInfos);
@@ -283,17 +310,22 @@ public class BackupActivity extends Activity implements OnClickListener {
 
 		for (PackageInfo pi : packs) {  
            //显示用户安装的应用程序，而不显示系统程序  
-           if ((pi.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) == 0 && (pi.applicationInfo.flags & ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) == 0) {  
-        	   App app = new App();
-        	   // 图标  
-        	   app.setAppIcon(((BitmapDrawable) pi.applicationInfo.loadIcon(pm)).getBitmap());
-               // 应用程序名称  
-        	   app.setAppName(pi.applicationInfo.loadLabel(pm).toString());
-               // 应用程序包名  
-        	   app.setAppPackageName(pi.applicationInfo.packageName);
-               apps.add(app); 
-           }
-        }
+           /*if ((pi.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) == 0 && (pi.applicationInfo.flags & ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) == 0) {
+
+           }*/
+			App app = new App();
+			// 图标
+			try {
+				app.setAppIcon(((BitmapDrawable) pi.applicationInfo.loadIcon(pm)).getBitmap());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			// 应用程序名称
+			app.setAppName(pi.applicationInfo.loadLabel(pm).toString());
+			// 应用程序包名
+			app.setAppPackageName(pi.applicationInfo.packageName + "    版本：" + pi.versionName);
+			apps.add(app);
+		}
 		return apps;
 	}
 }
