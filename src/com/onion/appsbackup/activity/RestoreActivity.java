@@ -6,8 +6,13 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.TypedValue;
@@ -16,6 +21,7 @@ import android.widget.Toast;
 import com.onion.appsbackup.R;
 import com.onion.appsbackup.adapter.RestoreAppAdapter;
 import com.onion.appsbackup.adapter.RestoreAppAdapter.OnAppItemClickListener;
+import com.onion.appsbackup.model.App;
 import com.onion.appsbackup.model.RestoreApp;
 import com.onion.appsbackup.model.User;
 import com.onion.appsbackup.util.HttpTools;
@@ -145,7 +151,7 @@ public class RestoreActivity extends Activity {
 			
 			@Override
 			public void onAppItemClick(int position) {
-				appList.get(position).setChecked(false);
+				appList.get(position).setChecked(true);
 				mAdapter.notifyDataSetChanged();
 				// TODO Auto-generated method stub
 				ClipboardManager cManager = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
@@ -253,8 +259,15 @@ public class RestoreActivity extends Activity {
 					appList.clear();
 				}
 				appList.addAll(apps);
+				for (RestoreApp restoreApp : appList) {
+					restoreApp.setChecked(false);
+				}
 				mAdapter.notifyDataSetChanged();
-				MobclickAgent.onEvent(RestoreActivity.this,"restore");
+
+				new GetAppsTask().execute();
+
+
+				MobclickAgent.onEvent(RestoreActivity.this, "restore");
 			}
 		}
 	}
@@ -289,5 +302,66 @@ public class RestoreActivity extends Activity {
 		} else {
 			Toast.makeText(RestoreActivity.this, R.string.msg_please_relogin, Toast.LENGTH_SHORT).show();
 		}
+	}
+
+	/**
+	 * 获取已安装应用的异步Task
+	 * @author Jason
+	 *
+	 */
+	private class GetAppsTask extends AsyncTask<Void, Void, List<App>> {
+
+		@Override
+		protected void onPreExecute() {
+			// TODO Auto-generated method stub
+			super.onPreExecute();
+			showProgressDialog();
+		}
+
+		@Override
+		protected List<App> doInBackground(Void... params) {
+			// TODO Auto-generated method stub
+			return getApps();
+		}
+
+		@Override
+		protected void onPostExecute(List<App> result) {
+			// TODO Auto-generated method stub
+			super.onPostExecute(result);
+			for (App app : result) {
+				for (RestoreApp restoreApp : appList) {
+					if (TextUtils.equals(app.getAppPackageName(), restoreApp.getAppPackageName())) {
+						restoreApp.setChecked(true);
+					}
+				}
+			}
+			mAdapter.notifyDataSetChanged();
+			cancelProgress();
+		}
+
+	}
+
+	/**
+	 * @return 用户安装的应用
+	 */
+	private List<App> getApps() {
+		List<App> apps = new ArrayList<App>();
+		PackageManager pm = getPackageManager();
+		List<PackageInfo> packs = pm.getInstalledPackages(0);
+
+		for (PackageInfo pi : packs) {
+			//显示用户安装的应用程序，而不显示系统程序
+			if ((pi.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) == 0 && (pi.applicationInfo.flags & ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) == 0) {
+				App app = new App();
+				// 图标
+				app.setAppIcon(((BitmapDrawable) pi.applicationInfo.loadIcon(pm)).getBitmap());
+				// 应用程序名称
+				app.setAppName(pi.applicationInfo.loadLabel(pm).toString());
+				// 应用程序包名
+				app.setAppPackageName(pi.applicationInfo.packageName);
+				apps.add(app);
+			}
+		}
+		return apps;
 	}
 }

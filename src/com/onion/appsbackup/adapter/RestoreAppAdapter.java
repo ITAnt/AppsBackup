@@ -71,9 +71,9 @@ public class RestoreAppAdapter extends BaseAdapter {
 		}
 		
 		if (app.isChecked()) {
-			mHolder.tv_restore_app_item.setTextColor(mContext.getResources().getColor(R.color.black));
-		} else {
 			mHolder.tv_restore_app_item.setTextColor(mContext.getResources().getColor(R.color.grey_text));
+		} else {
+			mHolder.tv_restore_app_item.setTextColor(mContext.getResources().getColor(R.color.black));
 			
 		}
 		
