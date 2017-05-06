@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.TextView;
 
 import com.onion.appsbackup.R;
+import com.onion.appsbackup.util.AppTool;
 import com.onion.appsbackup.view.CustomedActionBar;
 import com.onion.appsbackup.view.CustomedActionBar.OnLeftIconClickListener;
 import com.umeng.analytics.MobclickAgent;
@@ -28,6 +30,9 @@ public class AboutActivity extends Activity implements OnClickListener {
 				onBackPressed();
 			}
 		});
+
+		TextView tv_name = (TextView) findViewById(R.id.tv_name);
+		tv_name.setText(getString(R.string.label_version) + AppTool.getVersionName(this));
 	}
 	
 	@Override

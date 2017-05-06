@@ -26,7 +26,7 @@
     <string name="label_share_desc">Apps Backup is an app which backup your phone apps\' names.</string>
     <string name="msg_return_null">Return Null</string>
     <string name="label_about">About</string>
-    <string name="label_version">Apps Backup V1.0</string>
+    <string name="label_version">Apps Backup V</string>
     <string name="label_about_details">\u3000\u3000Apps Backup is an app which can back up your apps\' names quickly, the backup work will finish in several seconds. There are two reasons why this apps only backs up the names of your phone apps:\n\u3000\u30001. Apps always update frequently, though backed up the apks of apps, we cannot ensure that what we backed up is still the last version when we download.\n\u3000\u30002. Some users don\'t have a quick broadband, while phone apps are becoming larger and larger. Now one app\'s size is about 20 MB, so if one user installed 100 apps, it takes about 2 GB, this is too huge.\n\u3000\u3000Warning:If you want to use "Transfer face to face", please click "Send" on one phone first, then click "Receive" on another phone.\n\u3000\u3000Thank you for using Apps Backup, feedback:964161472@qq.com</string>
     <string name="label_backup_apps">Back up Apps</string>
     <string name="label_transfer_apps">Transfer face to face</string>

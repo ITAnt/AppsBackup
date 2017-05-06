@@ -187,82 +187,83 @@ containing a value of this type.
     }
     public static final class id {
         public static final int ab_about=0x7f0a0000;
-        public static final int ab_backup=0x7f0a0001;
-        public static final int ab_register=0x7f0a0011;
-        public static final int ab_restore=0x7f0a0016;
-        public static final int ab_setting=0x7f0a0018;
-        public static final int action_settings=0x7f0a004c;
-        public static final int ad_image=0x7f0a0031;
-        public static final int btn_backup_checked=0x7f0a0003;
-        public static final int btn_exit=0x7f0a001f;
-        public static final int btn_get_chaptcha=0x7f0a0012;
-        public static final int btn_login=0x7f0a0007;
-        public static final int btn_receive=0x7f0a0021;
-        public static final int btn_register=0x7f0a0015;
-        public static final int btn_send=0x7f0a0020;
-        public static final int ci_icon=0x7f0a000a;
-        public static final int ci_qq=0x7f0a0008;
-        public static final int et_chaptcha=0x7f0a0013;
-        public static final int et_name=0x7f0a0014;
-        public static final int et_password=0x7f0a0006;
-        public static final int et_phone=0x7f0a0005;
-        public static final int iv_app_icon=0x7f0a0027;
-        public static final int iv_checked=0x7f0a002a;
-        public static final int iv_gender=0x7f0a000c;
-        public static final int iv_left=0x7f0a0047;
-        public static final int iv_right=0x7f0a004b;
-        public static final int ll_about=0x7f0a001e;
-        public static final int ll_backup=0x7f0a000e;
-        public static final int ll_change_phone=0x7f0a001b;
-        public static final int ll_gender=0x7f0a001a;
-        public static final int ll_item=0x7f0a0026;
-        public static final int ll_nickname=0x7f0a0019;
-        public static final int ll_restore=0x7f0a000f;
-        public static final int ll_restore_app_item=0x7f0a002e;
-        public static final int ll_set_bg=0x7f0a001c;
-        public static final int ll_setting=0x7f0a0010;
-        public static final int ll_share=0x7f0a001d;
-        public static final int ll_transfer=0x7f0a000d;
-        public static final int loading=0x7f0a0035;
-        public static final int lv_app=0x7f0a0002;
-        public static final int lv_old_apps=0x7f0a0017;
-        public static final int progressBar1=0x7f0a002c;
-        public static final int progress_frame=0x7f0a0033;
-        public static final int promoter_frame=0x7f0a0032;
-        public static final int rl_head=0x7f0a0009;
-        public static final int rl_left=0x7f0a0046;
-        public static final int rl_right=0x7f0a004a;
-        public static final int status_msg=0x7f0a0034;
-        public static final int tv_app_name=0x7f0a0028;
-        public static final int tv_app_package_name=0x7f0a0029;
-        public static final int tv_cancel=0x7f0a0025;
-        public static final int tv_confirm=0x7f0a0024;
-        public static final int tv_dialog_desc=0x7f0a0023;
-        public static final int tv_dialog_title=0x7f0a0022;
-        public static final int tv_nickname=0x7f0a000b;
-        public static final int tv_register=0x7f0a0004;
-        public static final int tv_restore_app_item=0x7f0a002f;
-        public static final int tv_restore_app_package_name=0x7f0a0030;
-        public static final int tv_right=0x7f0a0049;
-        public static final int tv_title=0x7f0a0048;
-        public static final int umeng_common_icon_view=0x7f0a0036;
-        public static final int umeng_common_notification=0x7f0a003a;
-        public static final int umeng_common_notification_controller=0x7f0a0037;
-        public static final int umeng_common_progress_bar=0x7f0a003d;
-        public static final int umeng_common_progress_text=0x7f0a003c;
-        public static final int umeng_common_rich_notification_cancel=0x7f0a0039;
-        public static final int umeng_common_rich_notification_continue=0x7f0a0038;
-        public static final int umeng_common_title=0x7f0a003b;
-        public static final int umeng_update_content=0x7f0a0041;
-        public static final int umeng_update_frame=0x7f0a003e;
-        public static final int umeng_update_id_cancel=0x7f0a0044;
-        public static final int umeng_update_id_check=0x7f0a0042;
-        public static final int umeng_update_id_close=0x7f0a0040;
-        public static final int umeng_update_id_ignore=0x7f0a0045;
-        public static final int umeng_update_id_ok=0x7f0a0043;
-        public static final int umeng_update_wifi_indicator=0x7f0a003f;
-        public static final int wait_loading=0x7f0a002b;
-        public static final int wait_loading_text=0x7f0a002d;
+        public static final int ab_backup=0x7f0a0002;
+        public static final int ab_register=0x7f0a0012;
+        public static final int ab_restore=0x7f0a0017;
+        public static final int ab_setting=0x7f0a0019;
+        public static final int action_settings=0x7f0a004d;
+        public static final int ad_image=0x7f0a0032;
+        public static final int btn_backup_checked=0x7f0a0004;
+        public static final int btn_exit=0x7f0a0020;
+        public static final int btn_get_chaptcha=0x7f0a0013;
+        public static final int btn_login=0x7f0a0008;
+        public static final int btn_receive=0x7f0a0022;
+        public static final int btn_register=0x7f0a0016;
+        public static final int btn_send=0x7f0a0021;
+        public static final int ci_icon=0x7f0a000b;
+        public static final int ci_qq=0x7f0a0009;
+        public static final int et_chaptcha=0x7f0a0014;
+        public static final int et_name=0x7f0a0015;
+        public static final int et_password=0x7f0a0007;
+        public static final int et_phone=0x7f0a0006;
+        public static final int iv_app_icon=0x7f0a0028;
+        public static final int iv_checked=0x7f0a002b;
+        public static final int iv_gender=0x7f0a000d;
+        public static final int iv_left=0x7f0a0048;
+        public static final int iv_right=0x7f0a004c;
+        public static final int ll_about=0x7f0a001f;
+        public static final int ll_backup=0x7f0a000f;
+        public static final int ll_change_phone=0x7f0a001c;
+        public static final int ll_gender=0x7f0a001b;
+        public static final int ll_item=0x7f0a0027;
+        public static final int ll_nickname=0x7f0a001a;
+        public static final int ll_restore=0x7f0a0010;
+        public static final int ll_restore_app_item=0x7f0a002f;
+        public static final int ll_set_bg=0x7f0a001d;
+        public static final int ll_setting=0x7f0a0011;
+        public static final int ll_share=0x7f0a001e;
+        public static final int ll_transfer=0x7f0a000e;
+        public static final int loading=0x7f0a0036;
+        public static final int lv_app=0x7f0a0003;
+        public static final int lv_old_apps=0x7f0a0018;
+        public static final int progressBar1=0x7f0a002d;
+        public static final int progress_frame=0x7f0a0034;
+        public static final int promoter_frame=0x7f0a0033;
+        public static final int rl_head=0x7f0a000a;
+        public static final int rl_left=0x7f0a0047;
+        public static final int rl_right=0x7f0a004b;
+        public static final int status_msg=0x7f0a0035;
+        public static final int tv_app_name=0x7f0a0029;
+        public static final int tv_app_package_name=0x7f0a002a;
+        public static final int tv_cancel=0x7f0a0026;
+        public static final int tv_confirm=0x7f0a0025;
+        public static final int tv_dialog_desc=0x7f0a0024;
+        public static final int tv_dialog_title=0x7f0a0023;
+        public static final int tv_name=0x7f0a0001;
+        public static final int tv_nickname=0x7f0a000c;
+        public static final int tv_register=0x7f0a0005;
+        public static final int tv_restore_app_item=0x7f0a0030;
+        public static final int tv_restore_app_package_name=0x7f0a0031;
+        public static final int tv_right=0x7f0a004a;
+        public static final int tv_title=0x7f0a0049;
+        public static final int umeng_common_icon_view=0x7f0a0037;
+        public static final int umeng_common_notification=0x7f0a003b;
+        public static final int umeng_common_notification_controller=0x7f0a0038;
+        public static final int umeng_common_progress_bar=0x7f0a003e;
+        public static final int umeng_common_progress_text=0x7f0a003d;
+        public static final int umeng_common_rich_notification_cancel=0x7f0a003a;
+        public static final int umeng_common_rich_notification_continue=0x7f0a0039;
+        public static final int umeng_common_title=0x7f0a003c;
+        public static final int umeng_update_content=0x7f0a0042;
+        public static final int umeng_update_frame=0x7f0a003f;
+        public static final int umeng_update_id_cancel=0x7f0a0045;
+        public static final int umeng_update_id_check=0x7f0a0043;
+        public static final int umeng_update_id_close=0x7f0a0041;
+        public static final int umeng_update_id_ignore=0x7f0a0046;
+        public static final int umeng_update_id_ok=0x7f0a0044;
+        public static final int umeng_update_wifi_indicator=0x7f0a0040;
+        public static final int wait_loading=0x7f0a002c;
+        public static final int wait_loading_text=0x7f0a002e;
     }
     public static final class layout {
         public static final int activity_about=0x7f030000;
@@ -388,18 +389,9 @@ containing a value of this type.
     public static final class style {
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-
-
-        
          */
         public static final int AppBaseTheme=0x7f050000;
         public static final int AppStartLoadTranslucent=0x7f050001;
-        /**  All customizations that are NOT specific to a particular API-level can go here. 
-         */
         public static final int AppTheme=0x7f050002;
         public static final int dialog=0x7f050003;
     }

@@ -55,7 +55,7 @@
     <string name="label_title">标题</string>
     <string name="label_transfer_apps">当面快传</string>
     <string name="label_username">账号</string>
-    <string name="label_version">应用备份 V1.0</string>
+    <string name="label_version">应用备份 V</string>
     <string name="msg_back_suc">秒速备份成功！</string>
     <string name="msg_backup_fail">很遗憾备份失败</string>
     <string name="msg_check_network">( ′⌒`)请检查网络连接~~</string>

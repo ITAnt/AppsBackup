@@ -119,7 +119,7 @@
     <string name="label_title">TITLE</string>
     <string name="label_transfer_apps">Transfer face to face</string>
     <string name="label_username">Username</string>
-    <string name="label_version">Apps Backup V1.0</string>
+    <string name="label_version">Apps Backup V</string>
     <string name="msg_back_suc">Back up successfully</string>
     <string name="msg_backup_fail">Sorry, back up failed.</string>
     <string name="msg_check_network">( ′⌒`)Please check the network~~</string>
@@ -158,13 +158,7 @@
     <string name="umeng_common_start_download_notification">Download start.</string>
     <string name="umeng_common_start_patch_notification">Patch start.</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-
-
-        -->
+        
     </style>
     <style name="AppStartLoadTranslucent" parent="android:Theme">
         <item name="android:windowIsTranslucent">true</item>
@@ -173,7 +167,7 @@
         <item name="android:windowFullscreen">true</item>
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
     </style>
     <style name="dialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>

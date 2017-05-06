@@ -1,7 +1,5 @@
 package com.onion.appsbackup.activity;
 
-import org.json.JSONObject;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -12,18 +10,21 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import cn.bmob.v3.BmobUser;
 
 import com.onion.appsbackup.Constant;
 import com.onion.appsbackup.R;
 import com.onion.appsbackup.util.BackupActivityManager;
+import com.onion.appsbackup.util.SocialTool;
 import com.onion.appsbackup.util.tencent.TencentUtil;
 import com.onion.appsbackup.view.CustomedActionBar;
 import com.onion.appsbackup.view.CustomedActionBar.OnLeftIconClickListener;
-import com.tencent.connect.share.QQShare;
 import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
 import com.tencent.tauth.UiError;
+
+import org.json.JSONObject;
+
+import cn.bmob.v3.BmobUser;
 
 public class SettingActivity extends Activity implements OnClickListener {
 
@@ -118,19 +119,17 @@ public class SettingActivity extends Activity implements OnClickListener {
         }
 	}*/
 	
-	private void onClickShare() { 
-	    final Bundle params = new Bundle();
+	private void onClickShare() {
+		SocialTool.shareApp(this, "分享应用备份", "我发现了一款非常实用的应用，你可以直接在应用市场搜索“应用备份”，或者到以下网址获取源代码运行。https://github.com/ITAnt/AppsBackup");
+	    /*final Bundle params = new Bundle();
 	    params.putInt(QQShare.SHARE_TO_QQ_KEY_TYPE, QQShare.SHARE_TO_QQ_TYPE_DEFAULT);
 	    params.putString(QQShare.SHARE_TO_QQ_TITLE, getString(R.string.label_share_titile));
 	    params.putString(QQShare.SHARE_TO_QQ_SUMMARY, getString(R.string.label_share_desc));
-	    /*if (!isIconReady()) {
-	    	copyIcon();
-	    }*/
 	    
 	    params.putString(QQShare.SHARE_TO_QQ_IMAGE_URL, "http://bdbea3.duapp.com/pcs_download.php?id=950&link=%2Fapps%2Fhgf_blog%2Fic_launcher.png");
 	    params.putString(QQShare.SHARE_TO_QQ_TARGET_URL,  "http://a.app.qq.com/o/simple.jsp?pkgname=com.itant.topspeedbackup");
 	    params.putString(QQShare.SHARE_TO_QQ_APP_NAME, getString(R.string.app_name));
-	    mTencent.shareToQQ(SettingActivity.this, params, new BaseUiListener());
+	    mTencent.shareToQQ(SettingActivity.this, params, new BaseUiListener());*/
 	}
 	
 	private class BaseUiListener implements IUiListener {
