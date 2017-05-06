@@ -12,21 +12,48 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\AppsBackup\libs\BmobSDK_V3.4.3_0828.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="48db49e68d35b562a6a848d56f619b8c9f213611">
-        <dex dex="C:\AppsBackup\build\intermediates\pre-dexed\debug\BmobSDK_V3.4.3_0828_90a9ca7fe4786ccc88fdc3229644969e49ed71c1.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\AppsBackup\libs\jackson-databind-2.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="473e063d6396a1ff6e4b9c7943e604291ce18b07">
         <dex dex="C:\AppsBackup\build\intermediates\pre-dexed\debug\jackson-databind-2.4.0_2223e76d39ce9d22277c9d988ef5665e855d2564.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\AppsBackup\libs\jackson-annotations-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d6a66c7a5f01cf500377bd669507a08cfeba882a">
+        <dex dex="C:\AppsBackup\build\intermediates\pre-dexed\debug\jackson-annotations-2.4.0_7da11ba306b36d26bf9f37b77b90d7d46443ee4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\AppsBackup\libs\xUtils-2.6.14.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="C:\AppsBackup\build\intermediates\pre-dexed\debug\xUtils-2.6.14_6c062b94755eaacb34cbb2775b6dbf3d8f72b8f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\AppsBackup\libs\jackson-core-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1e33fd4cca6c4a9bf3d2f638cabb504a5b5c989d">
+        <dex dex="C:\AppsBackup\build\intermediates\pre-dexed\debug\jackson-core-2.4.0_e4296b18f0e4dfb905f8276d81729eb81f577e1b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\AppsBackup\libs\BmobSDK_V3.4.3_0828.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="48db49e68d35b562a6a848d56f619b8c9f213611">
+        <dex dex="C:\AppsBackup\build\intermediates\pre-dexed\debug\BmobSDK_V3.4.3_0828_90a9ca7fe4786ccc88fdc3229644969e49ed71c1.jar" />
     </item>
     <item
         is-multidex="false"
@@ -48,24 +75,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\AppsBackup\libs\xUtils-2.6.14.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
-        <dex dex="C:\AppsBackup\build\intermediates\pre-dexed\debug\xUtils-2.6.14_6c062b94755eaacb34cbb2775b6dbf3d8f72b8f1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\AppsBackup\libs\jackson-annotations-2.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d6a66c7a5f01cf500377bd669507a08cfeba882a">
-        <dex dex="C:\AppsBackup\build\intermediates\pre-dexed\debug\jackson-annotations-2.4.0_7da11ba306b36d26bf9f37b77b90d7d46443ee4b.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\AppsBackup\libs\android-support-v4.jar"
         jumboMode="false"
         optimize="true"
@@ -75,12 +84,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\AppsBackup\libs\jackson-core-2.4.0.jar"
+        jar="C:\AppsBackup\libs\okhttp-2.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="1e33fd4cca6c4a9bf3d2f638cabb504a5b5c989d">
-        <dex dex="C:\AppsBackup\build\intermediates\pre-dexed\debug\jackson-core-2.4.0_e4296b18f0e4dfb905f8276d81729eb81f577e1b.jar" />
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="C:\AppsBackup\build\intermediates\pre-dexed\debug\okhttp-2.4.0_63bafb74caf7791fc1781a201068035719472867.jar" />
     </item>
     <item
         is-multidex="false"
@@ -90,15 +99,6 @@
         revision="25.0.0"
         sha1="5b72bf48563ea8410e650de14aa33ff69a3e8c35">
         <dex dex="C:\AppsBackup\build\intermediates\pre-dexed\debug\okio-1.4.0_4a3cc73d5eeb08410162ff98ef0213ffdb314382.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\AppsBackup\libs\okhttp-2.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
-        <dex dex="C:\AppsBackup\build\intermediates\pre-dexed\debug\okhttp-2.4.0_63bafb74caf7791fc1781a201068035719472867.jar" />
     </item>
     <item
         is-multidex="false"

@@ -21,9 +21,6 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import cn.bmob.v3.BmobQuery;
-import cn.bmob.v3.BmobUser;
-import cn.bmob.v3.listener.GetListener;
 
 import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.bitmap.BitmapDisplayConfig;
@@ -37,6 +34,10 @@ import com.onion.appsbackup.util.UIUtils;
 import com.onion.appsbackup.view.CircleImage;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.update.UmengUpdateAgent;
+
+import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.BmobUser;
+import cn.bmob.v3.listener.GetListener;
 
 public class MainActivity extends Activity implements OnClickListener {
 
@@ -101,7 +102,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		mReceiver = new InfoReceiver();
 		IntentFilter filter = new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE");
 		registerReceiver(mReceiver, filter);
-		mWifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+		mWifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 	}
 
 	private void loadUserInfo() {

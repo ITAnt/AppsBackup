@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/shape_bg_choose_character_dialog" >
+
+    <TextView 
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_choose_operate"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/blue_dark"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp">
+        
+        <Button 
+            android:id="@+id/btn_send"
+            android:textSize="12sp"
+            android:textColor="@color/grey_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_send"
+            android:background="@drawable/selector_button_white"/>
+        
+        <Button 
+            android:id="@+id/btn_receive"
+            android:textSize="12sp"
+            android:textColor="@color/grey_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_receive"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/selector_button_white"/>
+    </LinearLayout>
+
+</RelativeLayout>

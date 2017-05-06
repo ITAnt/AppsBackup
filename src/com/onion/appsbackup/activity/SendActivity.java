@@ -143,7 +143,7 @@ public class SendActivity extends Activity implements OnClickListener {
 		btn_backup_checked.setOnClickListener(this);
 		btn_backup_checked.setEnabled(false);
 		
-		mWifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+		mWifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 		new GetApksTask().execute();
 		// 创建热点
 		String hotSpotName = "backup" + System.currentTimeMillis();

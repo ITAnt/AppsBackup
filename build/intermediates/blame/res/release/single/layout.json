@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\tb_munion_adview.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\tb_munion_adview.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\view_actionbar.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\view_actionbar.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\activity_splash.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\dialog_exit.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\dialog_exit.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\item_restore_app_list.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\item_restore_app_list.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\activity_about.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\dialog_choose_character.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\dialog_choose_character.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\tb_munion_aditem.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\tb_munion_aditem.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\activity_backup.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\activity_backup.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\umeng_update_dialog.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\umeng_update_dialog.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\activity_receive.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\activity_receive.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\activity_setting.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\activity_setting.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\activity_restore.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\activity_restore.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\activity_register.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\item_app_list.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\item_app_list.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\activity_main.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\item_loading.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\item_loading.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\release\\layout\\activity_login.xml",
+        "source": "C:\\AppsBackup\\res\\layout\\activity_login.xml"
+    }
+]

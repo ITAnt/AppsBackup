@@ -131,7 +131,7 @@ public class ReceiveActivity extends Activity {
 		lv_app.setAdapter(mAppAdapter);
 		
 		
-		mWifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+		mWifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 		// 搜索并连接我们APP创建的热点
 		new ConnectTask().execute();
 	}
