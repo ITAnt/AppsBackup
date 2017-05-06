@@ -1127,14 +1127,7 @@
                     "endOffset": 5873
                 },
                 "from": {
-                    "file": "C:\\AppsBackup\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 51,
-                        "startColumn": 4,
-                        "startOffset": 3814,
-                        "endColumn": 81,
-                        "endOffset": 3891
-                    }
+                    "file": "C:\\AppsBackup\\res\\values\\strings.xml"
                 }
             },
             {
@@ -1374,14 +1367,7 @@
                     "endOffset": 7084
                 },
                 "from": {
-                    "file": "C:\\AppsBackup\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 65,
-                        "startColumn": 4,
-                        "startOffset": 4711,
-                        "endColumn": 95,
-                        "endOffset": 4802
-                    }
+                    "file": "C:\\AppsBackup\\res\\values\\strings.xml"
                 }
             },
             {
@@ -1437,20 +1423,27 @@
                     "startLine": 121,
                     "startColumn": 4,
                     "startOffset": 7325,
-                    "endColumn": 58,
-                    "endOffset": 7379
+                    "endColumn": 55,
+                    "endOffset": 7376
                 },
                 "from": {
-                    "file": "C:\\AppsBackup\\res\\values\\strings.xml"
+                    "file": "C:\\AppsBackup\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1692,
+                        "endColumn": 55,
+                        "endOffset": 1743
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 7384,
+                    "startOffset": 7381,
                     "endColumn": 61,
-                    "endOffset": 7441
+                    "endOffset": 7438
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1460,9 +1453,9 @@
                 "to": {
                     "startLine": 123,
                     "startColumn": 4,
-                    "startOffset": 7446,
+                    "startOffset": 7443,
                     "endColumn": 66,
-                    "endOffset": 7508
+                    "endOffset": 7505
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1472,9 +1465,9 @@
                 "to": {
                     "startLine": 124,
                     "startColumn": 4,
-                    "startOffset": 7513,
+                    "startOffset": 7510,
                     "endColumn": 78,
-                    "endOffset": 7587
+                    "endOffset": 7584
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1484,9 +1477,9 @@
                 "to": {
                     "startLine": 125,
                     "startColumn": 4,
-                    "startOffset": 7592,
+                    "startOffset": 7589,
                     "endColumn": 61,
-                    "endOffset": 7649
+                    "endOffset": 7646
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1496,9 +1489,9 @@
                 "to": {
                     "startLine": 126,
                     "startColumn": 4,
-                    "startOffset": 7654,
+                    "startOffset": 7651,
                     "endColumn": 47,
-                    "endOffset": 7697
+                    "endOffset": 7694
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1508,9 +1501,9 @@
                 "to": {
                     "startLine": 127,
                     "startColumn": 4,
-                    "startOffset": 7702,
+                    "startOffset": 7699,
                     "endColumn": 55,
-                    "endOffset": 7753
+                    "endOffset": 7750
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1520,9 +1513,9 @@
                 "to": {
                     "startLine": 128,
                     "startColumn": 4,
-                    "startOffset": 7758,
+                    "startOffset": 7755,
                     "endColumn": 49,
-                    "endOffset": 7803
+                    "endOffset": 7800
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1532,9 +1525,9 @@
                 "to": {
                     "startLine": 129,
                     "startColumn": 4,
-                    "startOffset": 7808,
+                    "startOffset": 7805,
                     "endColumn": 83,
-                    "endOffset": 7887
+                    "endOffset": 7884
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1544,9 +1537,9 @@
                 "to": {
                     "startLine": 130,
                     "startColumn": 4,
-                    "startOffset": 7892,
+                    "startOffset": 7889,
                     "endColumn": 83,
-                    "endOffset": 7971
+                    "endOffset": 7968
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1556,9 +1549,9 @@
                 "to": {
                     "startLine": 131,
                     "startColumn": 4,
-                    "startOffset": 7976,
+                    "startOffset": 7973,
                     "endColumn": 52,
-                    "endOffset": 8024
+                    "endOffset": 8021
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1568,9 +1561,9 @@
                 "to": {
                     "startLine": 132,
                     "startColumn": 4,
-                    "startOffset": 8029,
+                    "startOffset": 8026,
                     "endColumn": 94,
-                    "endOffset": 8119
+                    "endOffset": 8116
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1580,9 +1573,9 @@
                 "to": {
                     "startLine": 133,
                     "startColumn": 4,
-                    "startOffset": 8124,
+                    "startOffset": 8121,
                     "endColumn": 84,
-                    "endOffset": 8204
+                    "endOffset": 8201
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1592,9 +1585,9 @@
                 "to": {
                     "startLine": 134,
                     "startColumn": 4,
-                    "startOffset": 8209,
+                    "startOffset": 8206,
                     "endColumn": 73,
-                    "endOffset": 8278
+                    "endOffset": 8275
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1604,9 +1597,9 @@
                 "to": {
                     "startLine": 135,
                     "startColumn": 4,
-                    "startOffset": 8283,
+                    "startOffset": 8280,
                     "endColumn": 61,
-                    "endOffset": 8340
+                    "endOffset": 8337
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1616,9 +1609,9 @@
                 "to": {
                     "startLine": 136,
                     "startColumn": 4,
-                    "startOffset": 8345,
+                    "startOffset": 8342,
                     "endColumn": 55,
-                    "endOffset": 8396
+                    "endOffset": 8393
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1628,9 +1621,9 @@
                 "to": {
                     "startLine": 137,
                     "startColumn": 4,
-                    "startOffset": 8401,
+                    "startOffset": 8398,
                     "endColumn": 81,
-                    "endOffset": 8478
+                    "endOffset": 8475
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1640,9 +1633,9 @@
                 "to": {
                     "startLine": 138,
                     "startColumn": 4,
-                    "startOffset": 8483,
+                    "startOffset": 8480,
                     "endColumn": 70,
-                    "endOffset": 8549
+                    "endOffset": 8546
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\tb_munion_strings.xml"
@@ -1652,9 +1645,9 @@
                 "to": {
                     "startLine": 139,
                     "startColumn": 4,
-                    "startOffset": 8554,
+                    "startOffset": 8551,
                     "endColumn": 67,
-                    "endOffset": 8617
+                    "endOffset": 8614
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1664,9 +1657,9 @@
                 "to": {
                     "startLine": 140,
                     "startColumn": 4,
-                    "startOffset": 8622,
+                    "startOffset": 8619,
                     "endColumn": 65,
-                    "endOffset": 8683
+                    "endOffset": 8680
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1676,9 +1669,9 @@
                 "to": {
                     "startLine": 141,
                     "startColumn": 4,
-                    "startOffset": 8688,
+                    "startOffset": 8685,
                     "endColumn": 49,
-                    "endOffset": 8733
+                    "endOffset": 8730
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1688,9 +1681,9 @@
                 "to": {
                     "startLine": 142,
                     "startColumn": 4,
-                    "startOffset": 8738,
+                    "startOffset": 8735,
                     "endColumn": 78,
-                    "endOffset": 8812
+                    "endOffset": 8809
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1700,9 +1693,9 @@
                 "to": {
                     "startLine": 143,
                     "startColumn": 4,
-                    "startOffset": 8817,
+                    "startOffset": 8814,
                     "endColumn": 69,
-                    "endOffset": 8882
+                    "endOffset": 8879
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\strings.xml"
@@ -1712,9 +1705,9 @@
                 "to": {
                     "startLine": 144,
                     "startColumn": 4,
-                    "startOffset": 8887,
+                    "startOffset": 8884,
                     "endColumn": 61,
-                    "endOffset": 8944
+                    "endOffset": 8941
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1724,9 +1717,9 @@
                 "to": {
                     "startLine": 145,
                     "startColumn": 4,
-                    "startOffset": 8949,
+                    "startOffset": 8946,
                     "endColumn": 65,
-                    "endOffset": 9010
+                    "endOffset": 9007
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1736,9 +1729,9 @@
                 "to": {
                     "startLine": 146,
                     "startColumn": 4,
-                    "startOffset": 9015,
+                    "startOffset": 9012,
                     "endColumn": 98,
-                    "endOffset": 9109
+                    "endOffset": 9106
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1748,9 +1741,9 @@
                 "to": {
                     "startLine": 147,
                     "startColumn": 4,
-                    "startOffset": 9114,
+                    "startOffset": 9111,
                     "endColumn": 59,
-                    "endOffset": 9169
+                    "endOffset": 9166
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1760,9 +1753,9 @@
                 "to": {
                     "startLine": 148,
                     "startColumn": 4,
-                    "startOffset": 9174,
+                    "startOffset": 9171,
                     "endColumn": 74,
-                    "endOffset": 9244
+                    "endOffset": 9241
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1772,9 +1765,9 @@
                 "to": {
                     "startLine": 149,
                     "startColumn": 4,
-                    "startOffset": 9249,
+                    "startOffset": 9246,
                     "endColumn": 95,
-                    "endOffset": 9340
+                    "endOffset": 9337
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1784,9 +1777,9 @@
                 "to": {
                     "startLine": 150,
                     "startColumn": 4,
-                    "startOffset": 9345,
+                    "startOffset": 9342,
                     "endColumn": 83,
-                    "endOffset": 9424
+                    "endOffset": 9421
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1796,9 +1789,9 @@
                 "to": {
                     "startLine": 151,
                     "startColumn": 4,
-                    "startOffset": 9429,
+                    "startOffset": 9426,
                     "endColumn": 50,
-                    "endOffset": 9475
+                    "endOffset": 9472
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1808,9 +1801,9 @@
                 "to": {
                     "startLine": 152,
                     "startColumn": 4,
-                    "startOffset": 9480,
+                    "startOffset": 9477,
                     "endColumn": 76,
-                    "endOffset": 9552
+                    "endOffset": 9549
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1820,9 +1813,9 @@
                 "to": {
                     "startLine": 153,
                     "startColumn": 4,
-                    "startOffset": 9557,
+                    "startOffset": 9554,
                     "endColumn": 124,
-                    "endOffset": 9677
+                    "endOffset": 9674
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1832,9 +1825,9 @@
                 "to": {
                     "startLine": 154,
                     "startColumn": 4,
-                    "startOffset": 9682,
+                    "startOffset": 9679,
                     "endColumn": 89,
-                    "endOffset": 9767
+                    "endOffset": 9764
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1844,9 +1837,9 @@
                 "to": {
                     "startLine": 155,
                     "startColumn": 4,
-                    "startOffset": 9772,
+                    "startOffset": 9769,
                     "endColumn": 74,
-                    "endOffset": 9842
+                    "endOffset": 9839
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1856,9 +1849,9 @@
                 "to": {
                     "startLine": 156,
                     "startColumn": 4,
-                    "startOffset": 9847,
+                    "startOffset": 9844,
                     "endColumn": 105,
-                    "endOffset": 9948
+                    "endOffset": 9945
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1868,9 +1861,9 @@
                 "to": {
                     "startLine": 157,
                     "startColumn": 4,
-                    "startOffset": 9953,
+                    "startOffset": 9950,
                     "endColumn": 84,
-                    "endOffset": 10033
+                    "endOffset": 10030
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1880,9 +1873,9 @@
                 "to": {
                     "startLine": 158,
                     "startColumn": 4,
-                    "startOffset": 10038,
+                    "startOffset": 10035,
                     "endColumn": 78,
-                    "endOffset": 10112
+                    "endOffset": 10109
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\umeng_common_strings.xml"
@@ -1892,10 +1885,10 @@
                 "to": {
                     "startLine": 159,
                     "startColumn": 4,
-                    "startOffset": 10117,
+                    "startOffset": 10114,
                     "endLine": 161,
                     "endColumn": 12,
-                    "endOffset": 10195
+                    "endOffset": 10192
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\styles.xml"
@@ -1905,10 +1898,10 @@
                 "to": {
                     "startLine": 162,
                     "startColumn": 4,
-                    "startOffset": 10200,
+                    "startOffset": 10197,
                     "endLine": 167,
                     "endColumn": 12,
-                    "endOffset": 10506
+                    "endOffset": 10503
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\styles.xml"
@@ -1918,10 +1911,10 @@
                 "to": {
                     "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 10511,
+                    "startOffset": 10508,
                     "endLine": 170,
                     "endColumn": 12,
-                    "endOffset": 10578
+                    "endOffset": 10575
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\styles.xml"
@@ -1931,10 +1924,10 @@
                 "to": {
                     "startLine": 171,
                     "startColumn": 4,
-                    "startOffset": 10583,
+                    "startOffset": 10580,
                     "endLine": 178,
                     "endColumn": 12,
-                    "endOffset": 11025
+                    "endOffset": 11022
                 },
                 "from": {
                     "file": "C:\\AppsBackup\\res\\values\\styles.xml"
