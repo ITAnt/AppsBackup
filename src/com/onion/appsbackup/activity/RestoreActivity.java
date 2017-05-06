@@ -1,19 +1,17 @@
 package com.onion.appsbackup.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.widget.ListView;
+import android.util.TypedValue;
 import android.widget.Toast;
-import cn.bmob.v3.BmobQuery;
-import cn.bmob.v3.BmobUser;
-import cn.bmob.v3.listener.GetListener;
 
 import com.onion.appsbackup.R;
 import com.onion.appsbackup.adapter.RestoreAppAdapter;
@@ -26,11 +24,23 @@ import com.onion.appsbackup.view.CustomedActionBar;
 import com.onion.appsbackup.view.CustomedActionBar.OnLeftIconClickListener;
 import com.onion.appsbackup.view.CustomedActionBar.OnRightIconClickListener;
 import com.onion.appsbackup.view.ProgressDialogUtils;
+import com.onion.appsbackup.view.swipemenu.SwipeMenu;
+import com.onion.appsbackup.view.swipemenu.SwipeMenuCreator;
+import com.onion.appsbackup.view.swipemenu.SwipeMenuItem;
+import com.onion.appsbackup.view.swipemenu.SwipeMenuListView;
 import com.umeng.analytics.MobclickAgent;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.BmobUser;
+import cn.bmob.v3.listener.GetListener;
+import cn.bmob.v3.listener.UpdateListener;
 
 public class RestoreActivity extends Activity {
 
-	private ListView lv_old_apps;
+	private SwipeMenuListView lv_old_apps;
 	private RestoreAppAdapter mAdapter;
 	private List<RestoreApp> appList;
 	
@@ -68,7 +78,68 @@ public class RestoreActivity extends Activity {
 		appList = new ArrayList<RestoreApp>();
 		mAdapter = new RestoreAppAdapter(this);
 		mAdapter.setApps(appList);
-		lv_old_apps = (ListView) findViewById(R.id.lv_old_apps);
+		lv_old_apps = (SwipeMenuListView) findViewById(R.id.lv_old_apps);
+		// step 1. create a MenuCreator
+		SwipeMenuCreator creator = new SwipeMenuCreator() {
+
+			@Override
+			public void create(SwipeMenu menu) {
+				// create "delete" item
+				SwipeMenuItem deleteItem = new SwipeMenuItem(
+						getApplicationContext());
+				// set item background
+				deleteItem.setBackground(new ColorDrawable(Color.rgb(0xF9,
+						0x3F, 0x25)));
+				// set item width
+				deleteItem.setWidth(dp2px(90));
+				// set a icon
+				deleteItem.setIcon(R.drawable.ic_delete);
+				// add to menu
+				menu.addMenuItem(deleteItem);
+			}
+		};
+		// set creator
+		lv_old_apps.setMenuCreator(creator);
+
+		// step 2. listener item click event
+		lv_old_apps.setOnMenuItemClickListener(new SwipeMenuListView.OnMenuItemClickListener() {
+			@Override
+			public boolean onMenuItemClick(final int position, SwipeMenu menu, int index) {
+				RestoreApp item = appList.get(position);
+				switch (index) {
+					case 0:
+						// delete
+						AlertDialog dialog = new AlertDialog.Builder(RestoreActivity.this)
+								.setMessage(String.format(getString(R.string.label_delete_message), item.getAppName()))
+								.setNegativeButton(getResources().getString(R.string.label_cancel), new DialogInterface.OnClickListener() {
+									@Override
+									public void onClick(DialogInterface dialogInterface, int i) {
+
+									}
+								})
+								.setPositiveButton(getResources().getString(R.string.label_confirm), new DialogInterface.OnClickListener() {
+									@Override
+									public void onClick(DialogInterface dialogInterface, int i) {
+										List<RestoreApp> backupApps = new ArrayList<RestoreApp>();
+										backupApps.addAll(appList);
+										backupApps.remove(position);
+										if (backupApps != null && backupApps.size() > 0) {
+											showProgressDialog();
+											String appInfos = com.alibaba.fastjson.JSON.toJSONString(backupApps);
+											saveApps(appInfos, position);
+										} else {
+											// 请选择至少一个应用
+											Toast.makeText(RestoreActivity.this, R.string.msg_please_choose_at_least_one_app, Toast.LENGTH_SHORT).show();
+										}
+									}
+								}).create();
+						dialog.show();
+						break;
+				}
+				return false;
+			}
+		});
+
 		lv_old_apps.setAdapter(mAdapter);
 		mAdapter.setOnAppItemClickListener(new OnAppItemClickListener() {
 			
@@ -89,6 +160,10 @@ public class RestoreActivity extends Activity {
 		} else {
 			Toast.makeText(this, R.string.msg_check_network, Toast.LENGTH_SHORT).show();
 		}
+	}
+	private int dp2px(int dp) {
+		return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp,
+				getResources().getDisplayMetrics());
 	}
 	
 	private ProgressDialogUtils pDlgUtl;
@@ -163,7 +238,6 @@ public class RestoreActivity extends Activity {
 		} else {
 			Toast.makeText(RestoreActivity.this, R.string.msg_please_relogin, Toast.LENGTH_SHORT).show();
 		}
-		
 	}
 	
 	
@@ -182,6 +256,38 @@ public class RestoreActivity extends Activity {
 				mAdapter.notifyDataSetChanged();
 				MobclickAgent.onEvent(RestoreActivity.this,"restore");
 			}
+		}
+	}
+
+	/**
+	 * 备份应用
+	 */
+	public void saveApps(String json, final int position) {
+		BmobUser bmobUser = BmobUser.getCurrentUser(RestoreActivity.this);
+		if (bmobUser != null) {
+			User user = new User();
+			user.setApps(json);
+			user.update(RestoreActivity.this, bmobUser.getObjectId(), new UpdateListener() {
+
+				@Override
+				public void onSuccess() {
+					// 提交成功
+					cancelProgress();
+					Toast.makeText(RestoreActivity.this, R.string.msg_back_suc, Toast.LENGTH_LONG).show();
+
+					appList.remove(position);
+					mAdapter.notifyDataSetChanged();
+				}
+
+				@Override
+				public void onFailure(int arg0, String arg1) {
+					// 提交失败
+					cancelProgress();
+					Toast.makeText(RestoreActivity.this, R.string.msg_backup_fail, Toast.LENGTH_SHORT).show();
+				}
+			});
+		} else {
+			Toast.makeText(RestoreActivity.this, R.string.msg_please_relogin, Toast.LENGTH_SHORT).show();
 		}
 	}
 }

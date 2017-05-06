@@ -1,8 +1,5 @@
 package com.onion.appsbackup.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.Activity;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
@@ -14,8 +11,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
-import cn.bmob.v3.BmobUser;
-import cn.bmob.v3.listener.UpdateListener;
 
 import com.onion.appsbackup.R;
 import com.onion.appsbackup.adapter.AppAdapter;
@@ -23,11 +18,20 @@ import com.onion.appsbackup.adapter.AppAdapter.OnAppItemClickListener;
 import com.onion.appsbackup.model.App;
 import com.onion.appsbackup.model.User;
 import com.onion.appsbackup.util.HttpTools;
+import com.onion.appsbackup.util.JsonHelper;
 import com.onion.appsbackup.view.CustomedActionBar;
 import com.onion.appsbackup.view.CustomedActionBar.OnLeftIconClickListener;
 import com.onion.appsbackup.view.CustomedActionBar.OnRightTextClickListener;
 import com.onion.appsbackup.view.ProgressDialogUtils;
 import com.umeng.analytics.MobclickAgent;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.BmobUser;
+import cn.bmob.v3.listener.GetListener;
+import cn.bmob.v3.listener.UpdateListener;
 
 public class BackupActivity extends Activity implements OnClickListener {
 
@@ -122,10 +126,9 @@ public class BackupActivity extends Activity implements OnClickListener {
 					
 					if (checkedApps != null && checkedApps.size() > 0) {
 						showProgressDialog();
-						String appInfos = com.alibaba.fastjson.JSON.toJSONString(checkedApps);
-						saveApps(appInfos);
+						saveApps(checkedApps);
 					} else {
-						// 没有网络
+						// 请选择至少一个应用
 						Toast.makeText(this, R.string.msg_please_choose_at_least_one_app, Toast.LENGTH_SHORT).show();
 					}
 				}
@@ -164,33 +167,72 @@ public class BackupActivity extends Activity implements OnClickListener {
 	
 	/**
 	 * 备份应用
-	 * @param view
 	 */
-	public void saveApps(String json) {
-		BmobUser bmobUser = BmobUser.getCurrentUser(BackupActivity.this);
+	public void saveApps(final List<App> checkedApps) {
+		// 获取已经备份好的
+		showProgressDialog();
+		final BmobUser bmobUser = BmobUser.getCurrentUser(this);
 		if (bmobUser != null) {
-			User user = new User();
-			user.setApps(json);
-			user.update(BackupActivity.this, bmobUser.getObjectId(), new UpdateListener() {
-				
-				@Override
-				public void onSuccess() {
-					// 提交成功
-					if (appList != null && appList.size() > 0) {
-						for (App app : appList) {
-							app.setChecked(false);
-						}
-						mAppAdapter.notifyDataSetChanged();
-					}
-					cancelProgress();
-					Toast.makeText(BackupActivity.this, R.string.msg_back_suc, Toast.LENGTH_LONG).show();
-				}
-				
+			BmobQuery<User> query = new BmobQuery<>();
+			query.getObject(BackupActivity.this, bmobUser.getObjectId(), new GetListener<User>() {
+
 				@Override
 				public void onFailure(int arg0, String arg1) {
-					// 提交失败
+					// TODO Auto-generated method stub
 					cancelProgress();
-					Toast.makeText(BackupActivity.this, R.string.msg_backup_fail, Toast.LENGTH_SHORT).show();
+					Toast.makeText(BackupActivity.this, R.string.msg_get_data_fail, Toast.LENGTH_SHORT).show();
+				}
+
+				@Override
+				public void onSuccess(User user) {
+					// TODO Auto-generated method stub
+					String apps = user.getApps();
+					List<App> restoreApps = null;
+					try {
+						restoreApps = JsonHelper.convertList(apps, App.class);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+					List<App> backupApps = new ArrayList<App>();
+					backupApps.addAll(restoreApps);
+					backupApps.addAll(checkedApps);
+
+					// 去除重复
+					List<App> noDuplicateApps = new ArrayList<App>();
+					for (App app : backupApps) {
+						List<String> packageNames = new ArrayList<String>();
+						for (App noDuplicateApp : noDuplicateApps) {
+							packageNames.add(noDuplicateApp.getAppPackageName());
+						}
+						if (!packageNames.contains(app.getAppPackageName())) {
+							noDuplicateApps.add(app);
+						}
+					}
+
+					String appInfos = com.alibaba.fastjson.JSON.toJSONString(noDuplicateApps);
+					user.setApps(appInfos);
+					user.update(BackupActivity.this, bmobUser.getObjectId(), new UpdateListener() {
+
+						@Override
+						public void onSuccess() {
+							// 提交成功
+							if (appList != null && appList.size() > 0) {
+								for (App app : appList) {
+									app.setChecked(false);
+								}
+								mAppAdapter.notifyDataSetChanged();
+							}
+							cancelProgress();
+							Toast.makeText(BackupActivity.this, R.string.msg_back_suc, Toast.LENGTH_LONG).show();
+						}
+
+						@Override
+						public void onFailure(int arg0, String arg1) {
+							// 提交失败
+							cancelProgress();
+							Toast.makeText(BackupActivity.this, R.string.msg_backup_fail, Toast.LENGTH_SHORT).show();
+						}
+					});
 				}
 			});
 		} else {

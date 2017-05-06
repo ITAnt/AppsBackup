@@ -1,0 +1,198 @@
+[
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_item_main.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\selector_item_main.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_left_down_customed.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\selector_btn_left_down_customed.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_button_close_bg_selector.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_update_button_close_bg_selector.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_pressed.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\shape_pressed.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_common_gradient_red.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_common_gradient_red.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_button_get_captcha.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\selector_button_get_captcha.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\tb_munion_item_selector.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\tb_munion_item_selector.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_register_text.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\selector_register_text.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_bg_choose_character_dialog.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\shape_bg_choose_character_dialog.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_button_cancel_bg_normal.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_update_button_cancel_bg_normal.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_normal.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\shape_normal.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_no_frame.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\btn_no_frame.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_button_cancel_bg_focused.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_update_button_cancel_bg_focused.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_dialog_bg.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_update_dialog_bg.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_with_frame.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\btn_with_frame.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_right_down_customed.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\selector_btn_right_down_customed.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_button_ok_bg_focused.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_update_button_ok_bg_focused.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_button_cancel_bg_selector.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_update_button_cancel_bg_selector.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_common_gradient_orange.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_common_gradient_orange.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_bg_operate.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\shape_bg_operate.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_rename.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\selector_btn_rename.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_title_bg.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_update_title_bg.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_button_white.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\selector_button_white.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_button_check_selector.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_update_button_check_selector.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_no_frame_normal.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\btn_no_frame_normal.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_with_frame_pressed.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\btn_with_frame_pressed.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_setting_item.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\selector_setting_item.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_edittext_radius.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\shape_edittext_radius.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_loading.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\progress_loading.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_wifi_disable.png",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_update_wifi_disable.png"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\item_with_frame_pressed.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\item_with_frame_pressed.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\item_with_frame_normal.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\item_with_frame_normal.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_no_frame_pressed.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\btn_no_frame_pressed.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_dialog_radius.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\shape_dialog_radius.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_qq.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\selector_qq.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_button_ok_bg_tap.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_update_button_ok_bg_tap.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_weibo.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\selector_weibo.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_delete.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\selector_btn_delete.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_common_gradient_green.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_common_gradient_green.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_button_rect.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\selector_button_rect.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\item_with_frame.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\item_with_frame.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_bg_top_radius_grey.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\shape_bg_top_radius_grey.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_button_cancel_bg_tap.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_update_button_cancel_bg_tap.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_item.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\selector_item.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_with_frame_normal.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\btn_with_frame_normal.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\tb_munion_icon.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\tb_munion_icon.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_button_radius.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\selector_button_radius.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_button_ok_bg_normal.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_update_button_ok_bg_normal.xml"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_button_ok_bg_selector.xml",
+        "source": "C:\\AppsBackup\\res\\drawable\\umeng_update_button_ok_bg_selector.xml"
+    }
+]

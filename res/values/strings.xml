@@ -49,6 +49,7 @@
     <string name="label_title">TITLE</string>
     <string name="label_desc">Description</string>
     <string name="label_confirm">Confirm</string>
+    <string name="label_delete_message">Sure to delete “%s” from server?</string>
     <string name="label_cancel">Cancel</string>
     <string name="msg_loading">Loading</string>
     <string name="label_coming">Next version will support this.</string>
@@ -62,4 +63,5 @@
     <string name="label_choose_operate">Choose Your Operation</string>
     <string name="toast_hotspot_connected">Hotspot created</string>
     <string name="toast_hotspot_failed">Connected failed</string>
+    <string name="label_swipe_delete_tips">Swipe from right to left to delete one item</string>
 </resources>

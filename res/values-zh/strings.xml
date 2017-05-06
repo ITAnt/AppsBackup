@@ -49,6 +49,7 @@
     <string name="label_title">标题</string>
     <string name="label_desc">描述</string>
     <string name="label_confirm">确定</string>
+    <string name="label_delete_message">确定从服务器删除“%s”吗？</string>
     <string name="label_cancel">取消</string>
     <string name="msg_loading">正在加载</string>
     <string name="label_coming">将在下一版本增加此功能</string>
@@ -62,4 +63,5 @@
     <string name="label_choose_operate">请选择要进行的操作</string>
     <string name="toast_hotspot_connected">连接热点成功</string>
     <string name="toast_hotspot_failed">连接热点失败</string>
+    <string name="label_swipe_delete_tips">左划可以删除某一个应用</string>
 </resources>

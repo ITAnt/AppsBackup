@@ -1,7 +1,5 @@
 package com.onion.appsbackup.adapter;
 
-import java.util.List;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +12,8 @@ import android.widget.TextView;
 
 import com.onion.appsbackup.R;
 import com.onion.appsbackup.model.App;
+
+import java.util.List;
 
 public class AppAdapter extends BaseAdapter {
 	
@@ -65,6 +65,7 @@ public class AppAdapter extends BaseAdapter {
 			mHolder = new ViewHolder();
 			mHolder.iv_app_icon = (ImageView) convertView.findViewById(R.id.iv_app_icon);
 			mHolder.tv_app_name = (TextView) convertView.findViewById(R.id.tv_app_name);
+			mHolder.tv_app_package_name = (TextView) convertView.findViewById(R.id.tv_app_package_name);
 			mHolder.iv_checked = (ImageView) convertView.findViewById(R.id.iv_checked);
 			mHolder.ll_item = (LinearLayout) convertView.findViewById(R.id.ll_item);
 			convertView.setTag(mHolder);
@@ -85,6 +86,7 @@ public class AppAdapter extends BaseAdapter {
 		
 		mHolder.iv_app_icon.setImageBitmap(app.getAppIcon());
 		mHolder.tv_app_name.setText(app.getAppName());
+		mHolder.tv_app_package_name.setText(app.getAppPackageName());
 		if (app.isChecked()) {
 			//mHolder.ll_item.setBackgroundColor(mContext.getResources().getColor(R.color.cute_dream_green_light));
 			mHolder.iv_checked.setVisibility(View.VISIBLE);
@@ -101,6 +103,7 @@ public class AppAdapter extends BaseAdapter {
 		LinearLayout ll_item;
 		ImageView iv_app_icon;
 		TextView tv_app_name;
+		TextView tv_app_package_name;
 		ImageView iv_checked;
 	}
 

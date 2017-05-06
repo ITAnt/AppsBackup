@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\weibo_pressed.png",
+        "source": "C:\\AppsBackup\\res\\drawable-xhdpi\\weibo_pressed.png"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_delete.png",
+        "source": "C:\\AppsBackup\\res\\drawable-xhdpi\\ic_delete.png"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "C:\\AppsBackup\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\qq_pressed.png",
+        "source": "C:\\AppsBackup\\res\\drawable-xhdpi\\qq_pressed.png"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\weibo_normal.png",
+        "source": "C:\\AppsBackup\\res\\drawable-xhdpi\\weibo_normal.png"
+    },
+    {
+        "merged": "C:\\AppsBackup\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\qq_normal.png",
+        "source": "C:\\AppsBackup\\res\\drawable-xhdpi\\qq_normal.png"
+    }
+]

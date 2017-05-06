@@ -1,7 +1,5 @@
 package com.onion.appsbackup.adapter;
 
-import java.util.List;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +11,8 @@ import android.widget.TextView;
 
 import com.onion.appsbackup.R;
 import com.onion.appsbackup.model.RestoreApp;
+
+import java.util.List;
 
 public class RestoreAppAdapter extends BaseAdapter {
 	
@@ -64,6 +64,7 @@ public class RestoreAppAdapter extends BaseAdapter {
 			mHolder = new ViewHolder();
 			mHolder.ll_restore_app_item = (LinearLayout) convertView.findViewById(R.id.ll_restore_app_item);
 			mHolder.tv_restore_app_item = (TextView) convertView.findViewById(R.id.tv_restore_app_item);
+			mHolder.tv_restore_app_package_name = (TextView) convertView.findViewById(R.id.tv_restore_app_package_name);
 			convertView.setTag(mHolder);
 		} else {
 			mHolder = (ViewHolder) convertView.getTag();
@@ -87,6 +88,7 @@ public class RestoreAppAdapter extends BaseAdapter {
 			}
 		});
 		mHolder.tv_restore_app_item.setText(app.getAppName());
+		mHolder.tv_restore_app_package_name.setText(app.getAppPackageName());
 		return convertView;
 	}
 	
@@ -94,6 +96,7 @@ public class RestoreAppAdapter extends BaseAdapter {
 		
 		LinearLayout ll_restore_app_item;
 		TextView tv_restore_app_item;
+		TextView tv_restore_app_package_name;
 	}
 
 	public interface OnAppItemClickListener {
