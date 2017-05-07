@@ -30,6 +30,7 @@
     <string name="label_choose_operate">请选择要进行的操作</string>
     <string name="label_coming">将在下一版本增加此功能</string>
     <string name="label_confirm">确定</string>
+    <string name="label_delete_all_btn">删除所有</string>
     <string name="label_delete_message">确定从服务器删除“%s”吗？</string>
     <string name="label_desc">描述</string>
     <string name="label_exit">退出登录</string>
@@ -56,6 +57,7 @@
     <string name="label_transfer_apps">当面快传</string>
     <string name="label_username">账号</string>
     <string name="label_version">应用备份 V</string>
+    <string name="lablel_delete_all">确定删除所有备份？</string>
     <string name="msg_back_suc">秒速备份成功！</string>
     <string name="msg_backup_fail">很遗憾备份失败</string>
     <string name="msg_check_network">( ′⌒`)请检查网络连接~~</string>

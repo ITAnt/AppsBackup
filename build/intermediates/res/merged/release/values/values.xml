@@ -94,6 +94,7 @@
     <string name="label_choose_operate">Choose Your Operation</string>
     <string name="label_coming">Next version will support this.</string>
     <string name="label_confirm">Confirm</string>
+    <string name="label_delete_all_btn">Delete all</string>
     <string name="label_delete_message">Sure to delete “%s” from server?</string>
     <string name="label_desc">Description</string>
     <string name="label_exit">EXIT</string>
@@ -120,6 +121,7 @@
     <string name="label_transfer_apps">Transfer face to face</string>
     <string name="label_username">Username</string>
     <string name="label_version">Apps Backup V</string>
+    <string name="lablel_delete_all">Sure to delete all?</string>
     <string name="msg_back_suc">Back up successfully</string>
     <string name="msg_backup_fail">Sorry, back up failed.</string>
     <string name="msg_check_network">( ′⌒`)Please check the network~~</string>

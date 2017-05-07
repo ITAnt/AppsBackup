@@ -64,4 +64,6 @@
     <string name="toast_hotspot_connected">连接热点成功</string>
     <string name="toast_hotspot_failed">连接热点失败</string>
     <string name="label_swipe_delete_tips">左划可以删除某一个应用</string>
+    <string name="lablel_delete_all">确定删除所有备份？</string>
+    <string name="label_delete_all_btn">删除所有</string>
 </resources>

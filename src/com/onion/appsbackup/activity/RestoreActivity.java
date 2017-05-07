@@ -15,6 +15,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.TypedValue;
+import android.view.View;
 import android.widget.Toast;
 
 import com.onion.appsbackup.R;
@@ -56,7 +57,28 @@ public class RestoreActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_restore);
-		
+
+		findViewById(R.id.btn_delete_all).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				AlertDialog dialog = new AlertDialog.Builder(RestoreActivity.this)
+						.setMessage(R.string.lablel_delete_all)
+						.setNegativeButton(getResources().getString(R.string.label_cancel), new DialogInterface.OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialogInterface, int i) {
+
+							}
+						})
+						.setPositiveButton(getResources().getString(R.string.label_confirm), new DialogInterface.OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialogInterface, int i) {
+								deleteAllApps();
+							}
+						}).create();
+				dialog.show();
+			}
+		});
+
 		ab_restore = (CustomedActionBar) findViewById(R.id.ab_restore);
 		ab_restore.setOnLeftIconClickListener(new OnLeftIconClickListener() {
 			
@@ -304,6 +326,38 @@ public class RestoreActivity extends Activity {
 	}
 
 	/**
+	 * 删除备份
+	 */
+	public void deleteAllApps() {
+		BmobUser bmobUser = BmobUser.getCurrentUser(RestoreActivity.this);
+		if (bmobUser != null) {
+			User user = new User();
+			user.setApps("");
+			user.update(RestoreActivity.this, bmobUser.getObjectId(), new UpdateListener() {
+
+				@Override
+				public void onSuccess() {
+					// 提交成功
+					cancelProgress();
+					Toast.makeText(RestoreActivity.this, R.string.msg_back_suc, Toast.LENGTH_LONG).show();
+
+					appList.clear();
+					mAdapter.notifyDataSetChanged();
+				}
+
+				@Override
+				public void onFailure(int arg0, String arg1) {
+					// 提交失败
+					cancelProgress();
+					Toast.makeText(RestoreActivity.this, R.string.msg_backup_fail, Toast.LENGTH_SHORT).show();
+				}
+			});
+		} else {
+			Toast.makeText(RestoreActivity.this, R.string.msg_please_relogin, Toast.LENGTH_SHORT).show();
+		}
+	}
+
+	/**
 	 * 获取已安装应用的异步Task
 	 * @author Jason
 	 *
@@ -329,8 +383,18 @@ public class RestoreActivity extends Activity {
 			super.onPostExecute(result);
 			for (App app : result) {
 				for (RestoreApp restoreApp : appList) {
-					if (TextUtils.equals(app.getAppPackageName(), restoreApp.getAppPackageName())) {
-						restoreApp.setChecked(true);
+					int index = restoreApp.getAppPackageName().indexOf("    版本：");
+					if (index == -1) {
+						// 没版本号
+						if (TextUtils.equals(app.getAppPackageName(), restoreApp.getAppPackageName())) {
+							restoreApp.setChecked(true);
+						}
+					} else {
+						// 有版本号
+						String serverPckName = restoreApp.getAppPackageName().substring(0, index);
+						if (TextUtils.equals(app.getAppPackageName(), serverPckName)) {
+							restoreApp.setChecked(true);
+						}
 					}
 				}
 			}

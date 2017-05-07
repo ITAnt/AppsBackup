@@ -8,7 +8,7 @@ ADDED from C:\AppsBackup\AndroidManifest.xml:2:1-197:12
 		INJECTED from C:\AppsBackup\AndroidManifest.xml
 		INJECTED from C:\AppsBackup\AndroidManifest.xml
 	android:versionCode
-		ADDED from C:\AppsBackup\AndroidManifest.xml:4:5-28
+		ADDED from C:\AppsBackup\AndroidManifest.xml:4:5-29
 		INJECTED from C:\AppsBackup\AndroidManifest.xml
 		INJECTED from C:\AppsBackup\AndroidManifest.xml
 	xmlns:android

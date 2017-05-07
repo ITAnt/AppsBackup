@@ -64,4 +64,6 @@
     <string name="toast_hotspot_connected">Hotspot created</string>
     <string name="toast_hotspot_failed">Connected failed</string>
     <string name="label_swipe_delete_tips">Swipe from right to left to delete one item</string>
+    <string name="lablel_delete_all">Sure to delete all?</string>
+    <string name="label_delete_all_btn">Delete all</string>
 </resources>
