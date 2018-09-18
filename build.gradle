@@ -1,5 +1,7 @@
 buildscript {
     repositories {
+        jcenter()
+        google()
         mavenCentral()
         maven {
             url 'https://maven.google.com/'
@@ -13,7 +15,7 @@ buildscript {
 apply plugin: 'android'
 
 dependencies {
-    compile fileTree(dir: 'libs', include: '*.jar')
+    implementation fileTree(dir: 'libs', include: '*.jar')
 }
 
 android {
@@ -64,6 +66,8 @@ android {
 }
 
 repositories {
+    jcenter()
+    google()
     maven {
         url 'https://maven.google.com/'
         name 'Google'
